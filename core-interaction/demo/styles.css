@@ -1,0 +1,38 @@
+body{
+ background-color: deeppink;
+}
+
+h1 {
+  background-color: green;
+  text-align: center;
+  border: 4px dotted mediumvioletred;
+}
+
+element.style {
+  text-decoration-skip: pink;
+}
+
+a{
+  color: pink;
+  font-size: 100px;
+}
+
+img{
+  width: 193px;
+}
+
+#good{
+  background-color: lightblue;
+}
+
+#evil{
+  background-color: brown;
+}
+
+.na {
+  font-family: Helvetica;
+}
+
+.sa {
+  font-family: Georgia;
+}

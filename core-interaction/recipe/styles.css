@@ -1,0 +1,37 @@
+html{
+  background: white;
+}
+
+body{
+  background: lightblue;
+  width: auto;
+  font-family: Helvetica;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 12px;
+}
+
+.prep{
+  margin-left: 5%;
+  margin-bottom: 3%;
+  font-size: 15px;
+}
+
+.ingredients {
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+.directions {
+  margin: 3.2%;
+  padding-bottom: 10px;
+ font-size: 15px;
+}
