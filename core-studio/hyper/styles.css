@@ -1,0 +1,296 @@
+body
+{
+  margin: 0 auto;
+  width: 100%;
+  font-family: sans-serif; Helvetica;
+}
+
+.static
+{
+    width: 100%;
+    z-index:2;
+    height:100px;
+    position: fixed;
+    background-color: white;
+}
+
+#menu 
+{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+}
+
+ul
+{
+  list-style: none;
+}
+
+.button1
+{
+    background-color: rgb(159,93,65);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 2px;
+}
+
+.button2
+{
+    background-color: rgb(245,132,102);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 2px;
+}
+
+.button3
+{
+    background-color: rgb(255,217,143);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 2px;
+}
+
+.button4
+{
+    background-color: rgb(112,185,198);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 2px;
+}
+
+.button5
+{
+    background-color: rgb(125,152,187);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 2px;
+}
+
+.button1:hover
+{
+     background: rgb(237,20,90);
+}
+
+.button2:hover
+{
+     background: rgb(45,137,185);
+}
+
+.button3:hover
+{
+     background: rgb(158,203,208);
+}
+
+.button4:hover
+{
+     background: rgb(243,123,125);
+}
+
+.button5:hover
+{
+     background: rgb(200,220,93);
+}
+
+button:focus
+{
+  outline: 0;
+}
+
+.button1 {border-radius: 50%;}
+.button2 {border-radius: 50%;}
+.button3 {border-radius: 50%;}
+.button4 {border-radius: 50%;}
+.button5 {border-radius: 50%;}
+
+h1
+{
+  padding-top: 2.5em;
+  font-size: 2.3em;
+  color: gray;
+  text-align: center;
+  background-color:white;
+  margin:0;
+}
+
+h2
+{
+  margin:0;
+  padding-top: 1em;
+  color: gray;
+  text-align: center;
+  background-color:white;
+  height:100px;
+}
+
+.pathology
+{
+  color: rgb(245,132,102);
+}
+
+.pathology:hover
+{
+  color: rgb(45,137,185);
+}
+
+.pathology:hover ~ .pathology
+{
+  color: rgb(45,137,185);
+}
+
+.systems
+{
+  color: rgb(255,217,143);
+}
+
+.systems:hover
+{
+  color: rgb(158,203,208);
+}
+
+.systems:hover ~ .systems
+{
+  color: rgb(158,203,208);
+}
+
+.capital
+{
+    color: rgb(159,93,65);
+}
+
+.capital:hover
+{
+  color: rgb(237,20,90);
+}
+
+.capital:hover ~ .capital
+{
+  color: rgb(237,20,90);
+}
+
+.cath
+{
+  color: rgb(125,152,187);
+}
+
+.cath:hover
+{
+  color: rgb(200,220,93);
+}
+
+.cath:hover ~ .cath
+{
+  color: rgb(200,220,93);
+}
+
+.class
+{
+  color: rgb(112,185,198);
+}
+
+.class:hover
+{
+  color: rgb(243,123,125);
+}
+
+.class:hover ~ .class
+{
+  color: rgb(243,123,125);
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12
+{
+  padding-top: 12em;
+  padding-left: 11em;
+  padding-right: 11em;
+  padding-bottom: 6em;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: justify;
+  color: gray;
+}
+
+h3
+{
+  text-align: center;
+  font-family: Helvetica;
+  color: black;
+  margin: 80px 0;
+}
+
+.definition
+{
+  text-align: center;
+  font-family: Helvetica;
+  color: black;
+  margin: 80px 0;
+}
+
+.box
+{
+  width: 50%;
+  margin: 0 auto;
+  background: (255,255,255);
+  padding: 50px;
+  border: 2px solid gray;
+  border-radius: 20px/50px;
+  text-align: center;
+}
+
+.overlay
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 600ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup
+{
+  margin: 70px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.popup .close
+{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: gray;
+}
