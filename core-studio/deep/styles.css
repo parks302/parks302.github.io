@@ -1,6 +1,7 @@
 body
 {
   margin: 0 auto;
+  margin-bottom: 10em;
   width: 100%;
   font-family: serif;
 }
@@ -28,7 +29,7 @@ h1
   padding-top: 5em;
   padding-left: 35%;
   padding-right: 9em;
-  padding-bottom: 6em;
+  padding-bottom: 5em;
   font-size: 17px;
   line-height: 1.2em;
   text-align: justify;
@@ -38,3 +39,10 @@ h1
 p {
     text-indent: 50px;
 }
+
+a {
+    color: black;
+    padding-left: 35%;
+    padding-right: 9%;
+        position:relative;
+  }
