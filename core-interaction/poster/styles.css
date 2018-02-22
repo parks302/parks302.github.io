@@ -1,0 +1,258 @@
+body{
+background-color: 	rgb(238,223,204);
+margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-item1 {
+ width: 20%;
+ background: white;
+}
+
+#bodycopy1 {
+  margin-top: 5.5em;
+  font-family: Helvetica;
+  font-size: 4em;
+  white-space: nowrap;
+  transform: rotate(270deg);
+}
+
+#bodycopy2 {
+  margin-top: 5em;
+  font-family: Helvetica;
+  font-size: 4em;
+  white-space: nowrap;
+  transform: rotate(90deg);
+}
+
+.flex-item2 {
+ width: 20%;
+}
+
+#ucla {
+  margin-top: 1.5em;
+  margin-right: 10px;
+  line-height:1.3em;
+  text-align: right;
+  font-family: Helvetica;
+  font-size: 1.5em;
+}
+
+#la {
+  margin-top: 1.5em;
+  margin-left: 10px;
+  line-height: 1.8em;
+  justify-content: left;
+  font-family: Helvetica;
+  font-size: 1.5em;
+}
+
+.flex-item3 {
+
+ width: 20%;
+}
+
+.flex-item4 {
+ width: 20%;
+}
+
+.flex-item5 {
+   width: 20%;
+   background: white;
+}
+
+.diamond {
+  margin-top: 10em;
+      margin-left: 7.5em;
+      height: 50px;
+      width: 50px;
+      background-color: red
+      display:none;
+}
+
+.black1 {
+  height: 255px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+transform-origin: 0 0;
+transition: transform .5s ease 0.3s;
+}
+
+.tan1 {
+  height: 255px;
+  width: 100%;
+  background-color: rgb(238,223,204);
+}
+.white {
+  height: 94px;
+  width: 100%;
+  background-color: white;
+}
+.white1 {
+  margin-top:-5px;
+  height: 110px;
+  width: 100%;
+  background-color: white;
+}
+
+.purple {
+  height: 140px;
+  width: 100%;
+  background-color: #aa8cc5;
+}
+
+.circle {
+    height: 255px;
+    width: 255px;
+    border-radius: 50%;
+  background-color: #33F3FF;
+}
+
+.redcircle1 {
+    position: absolute;
+height: 70px;
+width: 70px;
+border-radius: 50%;
+background-color: red;
+margin: 0 auto;
+position: absolute;
+top: 49.5%;
+left: 40%;
+text-align: center;
+}
+
+.redcircle2 {
+    position: absolute;
+height: 70px;
+width: 70px;
+border-radius: 50%;
+background-color: red;
+margin: 0 auto;
+position: absolute;
+top: 49.5%;
+left: 55%;
+text-align: center;
+}
+
+.upperlip {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: darkred;
+  margin: 0 auto;
+  position: absolute;
+  top: 78.5%;
+  left: 48.2%;
+  text-align: center;
+}
+
+.bottomlip {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 48%;
+  text-align: center;
+}
+
+.top{
+  transform: rotate(300deg);
+  top: 52.5%;
+  left: 42%;
+  margin: 0 auto;
+  position: absolute;
+  width: 25px;
+  height: 52px;
+  background-color: black;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 10px solid black;
+  border-left: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+  .top2{
+      transform: rotate(240deg);
+    top: 52.5%;
+    left: 56%;
+    margin: 0 auto;
+    position: absolute;
+    width: 25px;
+    height: 52px;
+    background-color: black;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 10px solid black;
+    border-left: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+.blacktri {
+    width: 0;
+    height: 0;
+    padding-left:100%;
+    padding-top:100%;
+    overflow: hidden;
+}
+.blacktri:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+
+    border-left: 500px solid transparent;
+    border-top: 500px solid black;
+    z-index: 1;
+  transform-origin: 0 0;
+  transition: transform 2s;
+}
+
+.flex-item2:hover .blacktri{
+  transform: rotateY(-170deg);
+}
+
+.black1:hover + .blacktri {
+    display: none;
+}
+
+.blacktri2 {
+    width: 0;
+    height: 0;
+    padding-bottom: 100%;
+    padding-left: 100%;
+    overflow: hidden;
+}
+.blacktri2:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid black;
+    z-index: 1;
+transform-origin: 100% 0;
+transition: transform 1s ease 0.3s;
+}
+
+.flex-item4:hover .blacktri2{
+  transform: rotateY(170deg);
+}
+
+.black1:hover + .blacktri2 {
+    display: none;
+}

@@ -1,0 +1,94 @@
+#page1 {
+  font-family: Garamond;
+}
+
+#page2 {
+  font-family: Garamond;
+}
+
+#page3 {
+  background-image: url(house.jpg);
+  background-repeat: none;
+  background-size: cover;
+  font-family: Garamond;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-item1 {
+  width: 20%;
+}
+
+.flex-item2 {
+  width: 20%;
+}
+
+.flex-item3 {
+  width: 20%;
+}
+
+.flex-item4 {
+  width: 20%;
+}
+
+.flex-item5 {
+  width: 20%;
+}
+
+.flex-item01 {
+  width: 15%;
+}
+
+.flex-item02 {
+  margin-top: 5em;
+  width: 35%;
+  line-height: 20em;
+}
+
+.flex-item03 {
+  width: 35%;
+  line-height: 20em;
+}
+
+.flex-item04 {
+  width: 15%;
+}
+
+#bodycopy1 {
+
+}
+
+#bodycopy01 {
+margin-top: 80%;
+}
+
+#bodycopy2 {
+margin-top: 35%;
+}
+
+#bodycopy3 {
+
+
+}
+
+#bodycopy4 {
+margin-top: 20%;
+
+}
+
+#bodycopy5 {
+margin-top: 35%;
+}
+
+#page2 {
+  background-color: pink;
+  font-family: Garamond;
+}
+
+#page3 {
+  background-color: yellow;
+  font-family: Garamond;
+}
