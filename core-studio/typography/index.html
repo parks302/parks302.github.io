@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Letter Scapes</title>
+    <link rel= "stylesheet"
+    href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<div id="overlay" onclick="off()">
+  <div>
+    <h1>About</h1>
+  </div>
+  <div>
+    <p>For my project, I considered the relationship between the alphabet and certain images as a modern day form of communication.<br> In order to do this, I created animated "letter-scapes" to reveal different perspectives of landscapes or cities as the<br> user hovers over the word. First, the viewer will focus on the letter as it is normally read, and then the image will appear on a<br> plane of the other side of the letter. I am interested in the idea that certain letters can inhabit an endless<br> amount of subjects, and I like the element of surprise that comes with showcasing a different kind of alphabet.
+</p>
+  </div>
+</div>
+<div style="padding:20px">
+  <button id="abt" onclick="on()">About</button>
+</div>
+<div>
+    <div class="overflow">
+      <div class="scroll">
+        <div class="container">
+          <div class="cube">
+           <div class="side front">
+              <span> T </span>
+           </div>
+           <div class="side top">
+             <img src="BHNTZ.png">
+           </div>
+          </div>
+          <div class="cube" id="O1">
+           <div class="side front">
+              <span> O </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+          <div class="cube" id="K1">
+           <div class="side front">
+              <span> K </span>
+           </div>
+           <div class="side top">
+             <img src="EKQW.png">
+           </div>
+          </div>
+          <div class="cube" id="Y1">
+           <div class="side front">
+              <span> Y </span>
+           </div>
+           <div class="side top">
+             <img src="fuji.png" id="fuji">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> O </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="cube" id="S2">
+         <div class="side front">
+            <span> S </span>
+         </div>
+         <div class="side top">
+           <img src="AGMSY.png">
+         </div>
+        </div>
+        <div class="cube">
+         <div class="side front">
+            <span> E </span>
+         </div>
+         <div class="side top">
+           <img src="EKQW.png">
+         </div>
+        </div>
+        <div class="cube">
+         <div class="side front">
+            <span> O </span>
+         </div>
+         <div class="side top">
+           <img src="nam.png" id="O2">
+         </div>
+        </div>
+        <div class="cube" id="U2">
+         <div class="side front">
+            <span> U </span>
+         </div>
+         <div class="side top">
+           <img src="CIOU.png">
+         </div>
+        </div>
+        <div class="cube" id="L2">
+         <div class="side front">
+            <span> L </span>
+         </div>
+         <div class="side top">
+           <img src="FLRX.png">
+         </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cube">
+         <div class="side front">
+            <span> B </span>
+         </div>
+         <div class="side top">
+           <img src="BHNTZ.png">
+         </div>
+        </div>
+        <div class="cube">
+         <div class="side front">
+            <span> U </span>
+         </div>
+         <div class="side top">
+           <img src="buda.png" id="buda">
+         </div>
+        </div>
+        <div class="cube" id="D3">
+         <div class="side front">
+            <span> D </span>
+         </div>
+         <div class="side top">
+           <img src="DJPV.png">
+         </div>
+        </div>
+        <div class="cube" id="A3">
+         <div class="side front">
+            <span> A </span>
+         </div>
+         <div class="side top">
+           <img src="AGMSY.png">
+         </div>
+        </div>
+        <div class="cube" id="P3">
+         <div class="side front">
+            <span> P </span>
+         </div>
+         <div class="side top">
+           <img src="DJPV.png">
+         </div>
+        </div>
+        <div class="cube" id="E3">
+         <div class="side front">
+            <span> E </span>
+         </div>
+         <div class="side top">
+           <img src="EKQW.png">
+         </div>
+        </div>
+        <div class="cube" id="S3">
+         <div class="side front">
+            <span> S </span>
+         </div>
+         <div class="side top">
+           <img src="AGMSY.png">
+         </div>
+        </div>
+        <div class="cube" id="T3">
+         <div class="side front">
+            <span> T </span>
+         </div>
+         <div class="side top">
+           <img src="BHNTZ.png">
+         </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="cube" id="B0">
+           <div class="side front">
+              <span> B </span>
+           </div>
+           <div class="side top">
+             <img src="BHNTZ.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> E </span>
+           </div>
+           <div class="side top">
+             <img src="EKQW.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> R </span>
+           </div>
+           <div class="side top">
+             <img src="EKQW.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> L </span>
+           </div>
+           <div class="side top">
+             <img src="FLRX.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> I </span>
+           </div>
+           <div class="side top">
+             <img src="berlin.png">
+           </div>
+          </div>
+          <div class="cube" id="N4">
+           <div class="side front">
+              <span> N </span>
+           </div>
+           <div class="side top">
+             <img src="BHNTZ.png" id="N04">
+           </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="cube">
+         <div class="side front">
+            <span> L </span>
+         </div>
+         <div class="side top">
+           <img src="FLRX.png">
+         </div>
+        </div>
+        <div class="cube">
+         <div class="side front">
+            <span> O </span>
+         </div>
+         <div class="side top">
+           <img src="CIOU.png">
+         </div>
+        </div>
+        <div class="cube" id="N5">
+         <div class="side front">
+            <span> N </span>
+         </div>
+         <div class="side top">
+           <img src="BHNTZ.png">
+         </div>
+        </div>
+        <div class="cube" id="D5">
+         <div class="side front">
+            <span> D </span>
+         </div>
+         <div class="side top">
+           <img src="DJPV.png">
+         </div>
+        </div>
+        <div class="cube" id="O5">
+         <div class="side front">
+            <span> O </span>
+         </div>
+         <div class="side top">
+           <img src="paris.png">
+         </div>
+        </div>
+        <div class="cube" id="NN5">
+         <div class="side front">
+            <span> N </span>
+         </div>
+         <div class="side top">
+           <img src="BHNTZ.png">
+         </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="cube">
+           <div class="side front">
+              <span> L </span>
+           </div>
+           <div class="side top">
+             <img src="FLRX.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> I </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+          <div class="cube" id="M6">
+           <div class="side front">
+              <span> M </span>
+           </div>
+           <div class="side top">
+             <img src="DJPV.png" id="peru">
+           </div>
+          </div>
+          <div class="cube" id="A6">
+           <div class="side front">
+              <span> A </span>
+           </div>
+           <div class="side top">
+             <img src="AGMSY.png">
+           </div>
+          </div>
+      </div>
+        <div class="container">
+          <div class="cube">
+           <div class="side front">
+              <span> B </span>
+           </div>
+           <div class="side top">
+             <img src="BHNTZ.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> E </span>
+           </div>
+           <div class="side top">
+             <img src="EKQW.png">
+           </div>
+          </div>
+          <div class="cube">
+           <div class="side front">
+              <span> I </span>
+           </div>
+           <div class="side top">
+             <img src="beijing.png">
+           </div>
+          </div>
+          <div class="cube" id="J7">
+           <div class="side front">
+              <span> J </span>
+           </div>
+           <div class="side top">
+             <img src="DJPV.png">
+           </div>
+          </div>
+          <div class="cube" id="I7">
+           <div class="side front">
+              <span> I </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+          <div class="cube" id="N7">
+           <div class="side front">
+              <span> N </span>
+           </div>
+           <div class="side top">
+             <img src="BHNTZ.png">
+           </div>
+          </div>
+          <div class="cube" id="G7">
+           <div class="side front">
+              <span> G </span>
+           </div>
+           <div class="side top">
+             <img src="AGMSY.png">
+           </div>
+          </div>
+      </div>
+        <div class="container">
+          <div class="cube">
+           <div class="side front">
+              <span> C </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+          <div class="cube" id="A8">
+           <div class="side front">
+              <span> A </span>
+           </div>
+           <div class="side top">
+             <img src="pyra.png" id="pyra">
+           </div>
+          </div>
+          <div class="cube" id="I8">
+           <div class="side front">
+              <span> I </span>
+           </div>
+           <div class="side top">
+             <img src="FLRX.png">
+           </div>
+          </div>
+          <div class="cube" id="R8">
+           <div class="side front">
+              <span> R </span>
+           </div>
+           <div class="side top">
+             <img src="FLRX.png">
+           </div>
+          </div>
+          <div class="cube" id="O8">
+           <div class="side front">
+              <span> O </span>
+           </div>
+           <div class="side top">
+             <img src="CIOU.png">
+           </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <button id="landscape">Landscape</button>
+  </div>
+
+
+
+    <script>
+$(document).ready(function() {
+    var clicked = false;
+
+    //var scroll=document.querySelector('.scroll')
+      //next.addEventListener("click", handleBtnClick)
+    //  function handleBtnClick() {
+      //  scroll.style.left="-90vw";
+      //  scroll.style.left=(scroll.style.left -90)+"vw";
+    //  }
+
+
+    $('.cube').hover(function() {
+      if(clicked) {
+        clicked = false;
+        $(this).removeClass('forwards').addClass('reverse');
+      } else {
+        clicked = true;
+        $(this).removeClass('reverse').addClass('forwards');
+      }
+    });
+
+    $("#landscape").click(function(){
+      if(clicked) {
+        clicked = false;
+        $('.cube').removeClass('forwards').addClass('reverse');
+      } else {
+        clicked = true;
+        $('.cube').removeClass('reverse').addClass('forwards');
+      }
+    });
+  });
+
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+
+</script>
+  </body>
+</html>

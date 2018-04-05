@@ -1,0 +1,52 @@
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.open {
+  width: 32.5%;
+}
+
+#open1 {
+font-size: 2em;
+}
+
+#open2 {
+font-size: 2.3em;
+}
+
+#open3 {
+font-size: 2.6em;
+}
+
+.eb {
+  width: 32.5%;
+}
+
+#eb1 {
+font-size: 2em;
+}
+
+#eb2 {
+font-size: 3em;
+}
+
+#eb3 {
+font-size: 4em;
+}
+
+.oswald {
+  width: 32%.5;
+}
+
+#oswald1 {
+font-size: 2em;
+}
+
+#oswald2 {
+font-size: 3em;
+}
+
+#oswald3 {
+font-size: 4em;
+}
