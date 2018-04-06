@@ -302,8 +302,20 @@ p {
   display: inline-block;
 }
 
-#J7 , #N7 {
+#N7 {
   position: relative;
+  z-index: -2;
+  margin-left: -3.2em;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
+#J7 {
+  position: relative;
+  z-index: -10;
   margin-left: -3.2em;
   width: 5em;
   height: 250px;
@@ -315,6 +327,17 @@ p {
 #I7 {
   position: relative;
   margin-left: -1.2em;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
+#IF {
+  position: relative;
+  margin-left: 0;
+  z-index: 2;
   width: 5em;
   height: 250px;
   transform-style: preserve-3d;
