@@ -73,6 +73,7 @@ p {
 
 #N5 {
   position: relative;
+  z-index: -2;
   margin-left: 2.2em;
   width: 5em;
   height: 250px;
@@ -101,9 +102,30 @@ p {
   display: inline-block;
 }
 
-#Y1, #A3, #P3 ,#O5 , #D5, #A8, #I8{
+#Y1, #A3, #P3 , #A8, #I8{
   position: relative;
   margin-left: 1.6em;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
+#D5{
+  position: relative;
+  z-index: 3;
+  margin-left: 1.6em;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
+#O5{
+  position: relative;
+  margin-left: -2.4em;
   width: 5em;
   height: 250px;
   transform-style: preserve-3d;
