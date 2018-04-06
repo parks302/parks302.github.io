@@ -125,7 +125,7 @@ p {
 
 #O5{
   position: relative;
-  margin-left: -2.4em;
+  margin-left: 0em;
   width: 5em;
   height: 250px;
   transform-style: preserve-3d;
@@ -144,9 +144,20 @@ p {
   display: inline-block;
 }
 
-#U2, #NN5, #G7 {
+#U2, #G7 {
   position: relative;
   margin-left: 2.1em;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
+
+#S5 {
+  position: relative;
+  margin-left: -2em;
   width: 5em;
   height: 250px;
   transform-style: preserve-3d;
