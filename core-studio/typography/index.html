@@ -402,6 +402,7 @@
     </div>
     </div>
     <button id="landscape">Landscape</button>
+    <button id="next">Next</button>
   </div>
 
 
@@ -410,12 +411,17 @@
 $(document).ready(function() {
     var clicked = false;
 
-    //var scroll=document.querySelector('.scroll')
-      //next.addEventListener("click", handleBtnClick)
-    //  function handleBtnClick() {
-      //  scroll.style.left="-90vw";
-      //  scroll.style.left=(scroll.style.left -90)+"vw";
-    //  }
+    var scroll=document.querySelector('.scroll')
+      next.addEventListener("click", handleBtnClick)
+    function handleBtnClick() {
+        // scroll.style.left="-90vw";
+        // debugger;
+        var left = scroll.style.left;
+        if (left == "") {
+          left = 0;
+        }
+       scroll.style.left=(parseInt(left) -100)+"vw";
+      }
 
 
     $('.cube').hover(function() {

@@ -515,6 +515,7 @@ p {
 
 #next{
     font: 10em 'Avenir', sans-serif;
+    color:black;
     border: none;
     background-color: inherit;
     font-size: 14px;
