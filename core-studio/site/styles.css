@@ -1,9 +1,48 @@
-body
-{
-  background-color: rgb(255, 200, 0);
-  margin: 0 auto;
-  max-width: 100% auto;
-  font: 'Helvetica', sans-serif;
+body {
+  font-family: 'Avenir', sans-serif;
+  width: auto 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+  margin: 1em;/* the space-between seperates the items as much as possible, but does not seperate the indiviual links within the div. */
+}
+
+#set-height{
+  display: block;
+  height: 13500px;
+}
+
+#v0{
+  position: fixed ;
+  top: 0  ;
+  left: 0  ;
+  width: 100%;
+}
+
+p {
+  font-family: helvetica ;
+  font-size: 24px ;
+}
+
+a:link {
+  text-decoration: none;
+  color:black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+h1 {
+  font:'Avenir', sans-serif;
+  color: white;
+  margin-top: 10%;
+  font-size: 4em;
+  text-align: center;
 }
 
 #overlay {
@@ -15,48 +54,61 @@ body
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
 }
 
+.container {
+  margin: 3% 28%;
+  line-height: 20px;
+}
+
+.cube {
+  position: relative;
+  width: 5em;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateX(0deg);
+  display: inline-block;
+}
+
 #abt {
-    margin-top: 2em;
+
      border: none;
      padding: 0;
      background: none;
-     font: 10em 'Helvetica', sans-serif;
+     font: 10em 'Avenir', sans-serif;
      font-size: 14px;
      cursor: pointer;
      display: inline-block;
 }
 
-h1
-{
-  font-size:10vw;
-  color: white;
-  text-align: center;
+#landscape{
+    font:'Avenir', sans-serif;
+    border: none;
+    background-color: inherit;
+    font-size: 14px;
+    padding: 14px 47.5%;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.description img
-{
-  max-width:100%;
-  height:auto;
+ #abt:focus{
+    outline:none;
 }
 
-.description
-{
-  font-size:10vw;
-  color: black;
+#next{
+    font: 10em 'Avenir', sans-serif;
+    color:black;
+    border: none;
+    background-color: inherit;
+    font-size: 14px;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
 }
 
-p {
-  text-align: center;
-    color: white;
-    font-size:7vw;
-}
-
-button:active {
-outline: none;
-border: none;
+#next:focus{
+    outline:none;
 }

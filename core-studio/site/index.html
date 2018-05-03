@@ -1,55 +1,64 @@
 <!doctype html>
 <html>
   <head>
-    <title>Mind the Light</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Site Specific Website</title>
     <link rel= "stylesheet"
     href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="overlay" onclick="off()">
-      <div>
-        <h1>Flashlight</h1>
-      </div>
-      <div>
-        <p>
-          Floor 3<br>
-          Across from Room 303
-        </p>
-      </div>
-    </div>
-      <div class="description">
-        <button id="abt" onclick="on()"><img src="mind.png"></button>
-        <img id="light" src="light.png">
-      </div>
 
 
-      <script>
-  $(document).ready(function() {
-      var clicked = false;
-    });
-
-        function on() {
-          document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-          document.getElementById("overlay").style.display = "none";
-        }
+<div id="overlay" onclick="off()">
+  <div>
+    <h1>About</h1>
+  </div>
+  <div>
+    <p>TBD</p>
+  </div>
+</div>
 
 
-  $("#light").click(function(){
-     $('body').css("background-color","white");
-    document.body.style.cursor = 'none';
-    $('.description img').hide();
+<div style="padding:20px">
+  <button id="abt" onclick="on()">About</button>
+</div>
 
-   $("#light").click(function(){
-      $('body').css("background-color","black");
-      document.body.style.cursor = 'default';
+
+<div>
+  <div class="container">
+    <img src="lamp.jpg"><img>
+    <img src="lamp.jpg"><img>
+    <img src="lamp.jpg"><img>
+  </div>
+    <button id="next">Next</button>
+</div>
+
+
+
+    <script>
+$(document).ready(function() {
+    var clicked = false;
+
+    $("#landscape").click(function(){
+      if(clicked) {
+        clicked = false;
+        $('.cube').removeClass('forwards').addClass('reverse');
+      } else {
+        clicked = true;
+        $('.cube').removeClass('reverse').addClass('forwards');
+      }
     });
   });
 
-  </script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+
+</script>
   </body>
 </html>
