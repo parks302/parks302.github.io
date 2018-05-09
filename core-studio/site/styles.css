@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+  font-family: Helvetica;
+}
+
 #set-height {
   display: block;
   height: 13500px;
@@ -23,6 +28,49 @@
   width: 100%;
   height: auto;
 }
+#v3 {
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+#v4 {
+  position:fixed;
+  top:33%;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+#v5 {
+  position:fixed;
+  top:66%;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+#v6 {
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+#v7 {
+  position:fixed;
+  top:33%;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+#v8 {
+  position:fixed;
+  top:66%;
+  left: 0;
+  width:100%;
+  height:auto;
+}
+
 p {
   font-family: helvetica;
   font-size: 24px;
@@ -30,6 +78,16 @@ p {
 
 #next {
   position: fixed;
+  left: 78%;
+  top: 97%;
+  z-index: 2;
+  font-size: 1em;
+}
+
+#previous {
+  position: fixed;
+  left: 4%;
+  top: 97%;
   z-index: 2;
   font-size: 1em;
 }

@@ -8,26 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <a href="#" id="overlay">About</a>
-    <a href="index.htm" id="next">index.htm</a>
+    <a href="index3.html" id="next">index.html</a>
+    <a href="index.html" id="previous">index.htm</a>
   <div id="set-height"></div>
   <div id="time"></div>
   <div id="scroll"></div>
   <div>
-  <video id="v0" muted playsinline autoplay>
+  <video id="v6" muted playsinline autoplay>
     <source type="video/mp4" src="img.mp4"></source>
   </video>
-  <video id="v1" muted playsinline autoplay>
+  <video id="v7" muted playsinline autoplay>
     <source type="video/mp4" src="img.mp4"></source>
   </video>
-  <video id="v2" muted playsinline autoplay>
+  <video id="v8" muted playsinline autoplay>
     <source type="video/mp4" src="img.mp4"></source>
   </video>
   </div>
     <script>
 
     // select video element
-    var v0 = document.getElementById("v0");
+    var v6 = document.getElementById("v6");
     var time = $("#time");
     var scroll = $("#scroll");
     var windowheight = $(window).height() - 20;
@@ -40,7 +40,7 @@
     var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
 
     // pause video on load
-    v0.pause();
+    v6.pause();
 
     window.onscroll = function() {
       //Set the video position that we want to end up at:
@@ -60,12 +60,12 @@
       time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
 
       //update video playback
-      v0.currentTime = scrollpos;
-      v0.pause();
+      v6.currentTime = scrollpos;
+      v6.pause();
     }, 40);
 
     // select video element
-    var v1 = document.getElementById("v1");
+    var v7 = document.getElementById("v7");
     var time = $("#time");
     var scroll = $("#scroll");
     var windowheight = $(window).height() - 20;
@@ -78,7 +78,7 @@
     var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
 
     // pause video on load
-    v1.pause();
+    v7.pause();
 
     window.onscroll = function() {
       //Set the video position that we want to end up at:
@@ -98,12 +98,12 @@
       time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
 
       //update video playback
-      v1.currentTime = scrollpos;
-      v1.pause();
+      v7.currentTime = scrollpos;
+      v7.pause();
     }, 40);
 
     // select video element
-    var v2 = document.getElementById("v2");
+    var v8 = document.getElementById("v8");
     var time = $("#time");
     var scroll = $("#scroll");
     var windowheight = $(window).height() - 20;
@@ -116,7 +116,7 @@
     var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
 
     // pause video on load
-    v2.pause();
+    v8.pause();
 
     window.onscroll = function() {
       //Set the video position that we want to end up at:
@@ -136,8 +136,8 @@
       time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
 
       //update video playback
-      v2.currentTime = scrollpos;
-      v2.pause();
+      v8.currentTime = scrollpos;
+      v8.pause();
     }, 40);
 
 
