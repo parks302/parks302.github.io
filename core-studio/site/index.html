@@ -26,39 +26,67 @@
 
 
 <div>
-  <div class="container">
-    <img src="lamp.jpg"><img>
-    <img src="lamp.jpg"><img>
-    <img src="lamp.jpg"><img>
-  </div>
+
+  <div id="set-height"></div>
+  <div id="time"></div>
+  <div id="scroll"></div>
+  <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload"><source type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"" src="img.mp4"></source></video>
+  
     <button id="next">Next</button>
+
+
 </div>
 
 
 
     <script>
-$(document).ready(function() {
-    var clicked = false;
 
-    $("#landscape").click(function(){
-      if(clicked) {
-        clicked = false;
-        $('.cube').removeClass('forwards').addClass('reverse');
-      } else {
-        clicked = true;
-        $('.cube').removeClass('reverse').addClass('forwards');
-      }
-    });
-  });
+    // select video element
+    var vid = document.getElementById("v0");
+    var time = $("#time");
+    var scroll = $("#scroll");
+    var windowheight = $(window).height() - 20;
 
-      function on() {
-        document.getElementById("overlay").style.display = "block";
-      }
+    var scrollpos = window.pageYOffset / 400;
+    var targetscrollpos = scrollpos;
+    var accel = 0;
 
-      function off() {
-        document.getElementById("overlay").style.display = "none";
-      }
+    // ---- Values you can tweak: ----
+    var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
 
+    // pause video on load
+    vid.pause();
+
+    window.onscroll = function() {
+      //Set the video position that we want to end up at:
+      targetscrollpos = window.pageYOffset / 400;
+
+      //move the red dot to a position across the side of the screen
+      //that indicates how far we've scrolled.
+      scroll.css("top", 10 + window.pageYOffset / 13500 * windowheight);
+    };
+
+    setInterval(function() {
+      //Accelerate towards the target:
+      scrollpos += (targetscrollpos - scrollpos) * accelamount;
+
+      //move the blue dot to a position across the side of the screen
+      //that indicates where the current video scroll pos is.
+      time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
+
+      //update video playback
+      vid.currentTime = scrollpos;
+      vid.pause();
+    }, 40);
+
+
+//      function on() {
+  //      document.getElementById("overlay").style.display = "block";
+    //  }
+
+//      function off() {
+  //      document.getElementById("overlay").style.display = "none";
+    //  }
 </script>
   </body>
 </html>
