@@ -8,8 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <a href="#" id="overlay">About</a>
-    <a href="index.htm" id="next">index.htm</a>
+    <div id="overlay1" onclick="off()">
+  <div>
+    <h1>First Setting</h1>
+  </div>
+  <div>
+    <p>Details About Setting</p>
+  </div>
+</div>
+<div style="padding:20px">
+  <button id="about" onclick="on()">About</button>
+</div>
+  <button id="next">index.htm</button>
   <div id="set-height"></div>
   <div id="time"></div>
   <div id="scroll"></div>
@@ -141,13 +151,13 @@
     }, 40);
 
 
-//      function on() {
-  //      document.getElementById("overlay").style.display = "block";
-    //  }
+      function on() {
+        document.getElementById("overlay1").style.display = "block";
+      }
 
-//      function off() {
-  //      document.getElementById("overlay").style.display = "none";
-    //  }
+      function off() {
+        document.getElementById("overlay1").style.display = "none";
+      }
 </script>
   </body>
 </html>

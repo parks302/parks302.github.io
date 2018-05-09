@@ -76,6 +76,14 @@ p {
   font-size: 24px;
 }
 
+#about {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  z-index: 2;
+  font-size: 1em;
+}
+
 #next {
   position: fixed;
   left: 78%;
@@ -98,6 +106,65 @@ a:link{
 
 a:visited{
   text-decoration: none;
+}
+
+#overlay1 {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay2 {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay3 {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+h1 {
+  font:'Helvetica', sans-serif;
+  color: white;
+  margin-top: 10%;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font:'Helvetica', sans-serif;
+  color: white;
 }
 
 #time {
