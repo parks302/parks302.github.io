@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Site Specific Website</title>
+    <link rel= "stylesheet"
+    href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <a href="#" id="next">Next Button</a>
+  <div id="set-height"></div>
+  <div id="time"></div>
+  <div id="scroll"></div>
+  <div>
+  <video id="v3" muted playsinline autoplay>
+    <source type="video/mp4" src="img.mp4"></source>
+  </video>
+  <video id="v4" muted playsinline autoplay>
+    <source type="video/mp4" src="img.mp4"></source>
+  </video>
+  <video id="v5" muted playsinline autoplay>
+    <source type="video/mp4" src="img.mp4"></source>
+  </video>
+  </div>
+    <script>
+
+    // select video element
+    var v3 = document.getElementById("v3");
+    var time = $("#time");
+    var scroll = $("#scroll");
+    var windowheight = $(window).height() - 20;
+
+    var scrollpos = window.pageYOffset / 400;
+    var targetscrollpos = scrollpos;
+    var accel = 0;
+
+    // ---- Values you can tweak: ----
+    var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
+
+    // pause video on load
+    v3.pause();
+
+    window.onscroll = function() {
+      //Set the video position that we want to end up at:
+      targetscrollpos = window.pageYOffset / 400;
+
+      //move the red dot to a position across the side of the screen
+      //that indicates how far we've scrolled.
+      scroll.css("top", 10 + window.pageYOffset / 13500 * windowheight);
+    };
+
+    setInterval(function() {
+      //Accelerate towards the target:
+      scrollpos += (targetscrollpos - scrollpos) * accelamount;
+
+      //move the blue dot to a position across the side of the screen
+      //that indicates where the current video scroll pos is.
+      time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
+
+      //update video playback
+      v3.currentTime = scrollpos;
+      v3.pause();
+    }, 40);
+
+    // select video element
+    var v4 = document.getElementById("v4");
+    var time = $("#time");
+    var scroll = $("#scroll");
+    var windowheight = $(window).height() - 20;
+
+    var scrollpos = window.pageYOffset / 400;
+    var targetscrollpos = scrollpos;
+    var accel = 0;
+
+    // ---- Values you can tweak: ----
+    var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
+
+    // pause video on load
+    v4.pause();
+
+    window.onscroll = function() {
+      //Set the video position that we want to end up at:
+      targetscrollpos = window.pageYOffset / 400;
+
+      //move the red dot to a position across the side of the screen
+      //that indicates how far we've scrolled.
+      scroll.css("top", 10 + window.pageYOffset / 13500 * windowheight);
+    };
+
+    setInterval(function() {
+      //Accelerate towards the target:
+      scrollpos += (targetscrollpos - scrollpos) * accelamount;
+
+      //move the blue dot to a position across the side of the screen
+      //that indicates where the current video scroll pos is.
+      time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
+
+      //update video playback
+      v4.currentTime = scrollpos;
+      v4.pause();
+    }, 40);
+
+    // select video element
+    var v5 = document.getElementById("v5");
+    var time = $("#time");
+    var scroll = $("#scroll");
+    var windowheight = $(window).height() - 20;
+
+    var scrollpos = window.pageYOffset / 400;
+    var targetscrollpos = scrollpos;
+    var accel = 0;
+
+    // ---- Values you can tweak: ----
+    var accelamount = 0.1; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
+
+    // pause video on load
+    v5.pause();
+
+    window.onscroll = function() {
+      //Set the video position that we want to end up at:
+      targetscrollpos = window.pageYOffset / 400;
+
+      //move the red dot to a position across the side of the screen
+      //that indicates how far we've scrolled.
+      scroll.css("top", 10 + window.pageYOffset / 13500 * windowheight);
+    };
+
+    setInterval(function() {
+      //Accelerate towards the target:
+      scrollpos += (targetscrollpos - scrollpos) * accelamount;
+
+      //move the blue dot to a position across the side of the screen
+      //that indicates where the current video scroll pos is.
+      time.css("top", 10 + scrollpos / 13500 * 400 * windowheight);
+
+      //update video playback
+      v5.currentTime = scrollpos;
+      v5.pause();
+    }, 40);
+
+
+//      function on() {
+  //      document.getElementById("overlay").style.display = "block";
+    //  }
+
+//      function off() {
+  //      document.getElementById("overlay").style.display = "none";
+    //  }
+</script>
+  </body>
+</html>
