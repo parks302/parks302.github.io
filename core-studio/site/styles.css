@@ -11,7 +11,7 @@ body {
 .container:hover .box{
   zoom: 1;
   filter: alpha(opacity=45);
-  opacity: 0.45;
+  opacity: 0.25;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out;
