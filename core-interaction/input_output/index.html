@@ -1,55 +1,75 @@
 <!doctype html>
 <html>
   <head>
-    <title>Mind the Light</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>TRUISMS</title>
     <link rel= "stylesheet"
     href="styles.css"/>
   </head>
   <body>
-    <div id="overlay" onclick="off()">
-      <div>
-        <h1>Flashlight</h1>
-      </div>
-      <div>
-        <p>
-          Floor 3<br>
-          Across from Room 303
-        </p>
-      </div>
+    <div class="static">
+    <div id="popup1" class="overlay">
     </div>
-      <div class="description">
-        <button id="abt" onclick="on()"><img src="mind.png"></button>
-        <img id="light" src="light.png">
+    <div id="popup2" class="overlay">
+    </div>
+    <div id="popup3" class="overlay">
+    </div>
+    <div id="popup4" class="overlay">
+    </div>
+    <div id="popup5" class="overlay">
+</div>
+    <h1 id="h1"> TRUISMS </h1>
+    <h2 id="h2"> Jenny Holzer </h2>
+  </div>
+      <div class="p1" id="01">
+        A little knowledge can go a long way <br>
+        A lot of professionals are crackpots <br>
+        A man can't know what it is to be a mother  <br>
+        A name means a lot just by itself <br>
+        A positive attitude means all the difference in the world <br>
+        A relaxed man is not necessarily a better man <br>
+        A sense of timing is the mark of genius <br>
+        A sincere effort is all you can ask <br>
+        A single event can have infinitely many interpretations <br>
+        A solid home base builds a sense of self  <br>
+        A strong sense of duty imprisons you  <br>
+        Absolute submission can be a form of freedom  <br>
+        Abstraction is a type of decadence  <br>
+        Abuse of power comes as no surprise <br>
+        Action causes more trouble than thought <br>
+        Alienation produces eccentrics or revolutionaries <br>
+        All things are delicately interconnected  <br>
+        Ambition is just as dangerous as complacency  <br>
+        Ambivalence can ruin your life  <br>
+        An elite is inevitable  <br>
+        Anger or hate can be a useful motivating force  <br>
+        Animalism is perfectly healthy  <br>
+        Bad intentions can yield good results <br>
+        Being alone with yourself is increasingly unpopular <br>
+        Being happy is more important than anything else <br>
+        Being judgmental is a sign of life <br>
+        Being sure of yourself means you're a fool <br>
+        Believing in rebirth is the same as admitting defeat <br>
+        Boredom makes you do crazy things <br>
+        Calm is more conductive to creativity than is anxiety <br>
+        Categorizing fear is calming <br>
+        Change is valuable when the oppressed become tyrants <br>
+        Chasing the new is dangerous to society <br>
+        Children are the most cruel of all <br>
+        Children are the hope of the future <br>
+        Class action is a nice idea with no substance <br>
+        Class structure is as artificial as plastic <br>
+        decadence can be an end in itself <br>
+        Decency is a relative thing <br>
+        Dependence can be a meal ticket <br>
+        Description is more important than metaphor <br>
+        Deviants are sacrificed to increase group solidarity <br>
+        Disgust is the appropriate response to most situations <br>
+        Disorganization is a kind of anesthesia <br>
+        Don't place to much trust in experts <br>
+        Drama often obscures the real issues <br>
+        Dreaming while awake is a frightening contradiction <br>
+        Dying and coming back gives you considerable perspective <br>
+        Dying should be as easy as falling off a log <br>
       </div>
-
-
-      <script>
-  $(document).ready(function() {
-      var clicked = false;
-    });
-
-        function on() {
-          document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-          document.getElementById("overlay").style.display = "none";
-        }
-
-
-  $("#light").click(function(){
-     $('body').css("background-color","white");
-    document.body.style.cursor = 'none';
-    $('.description img').hide();
-
-   $("#light").click(function(){
-      $('body').css("background-color","black");
-      document.body.style.cursor = 'default';
-    });
-  });
-
-  </script>
   </body>
 </html>
