@@ -7,6 +7,30 @@ body {
   display: block;
   height: 13500px;
 }
+
+.container:hover .box{
+  zoom: 1;
+  filter: alpha(opacity=45);
+  opacity: 0.45;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+/*Fade out the particular DIV when user hover on that DIV*/
+.container .box:hover{
+  box-shadow: 3px 3px 15px #666;
+  cursor: pointer;
+
+  /*Opacity*/
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+
 #v0 {
   position: fixed;
   top: 0;
