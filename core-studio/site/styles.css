@@ -8,7 +8,7 @@ body {
   height: 13500px;
 }
 
-.container:active .box{
+.container:hover .box{
   zoom: 1;
   filter: alpha(opacity=45);
   opacity: 0;
@@ -19,7 +19,7 @@ body {
   transition: opacity .5s ease-in-out;
 }
 
-.container .box:active{
+.container .box:hover{
   box-shadow: 3px 3px 15px #666;
   cursor: pointer;
 
@@ -100,15 +100,15 @@ p {
 
 #about {
   position: fixed;
-  left: 50%;
-  top: 0;
+  left: 42%;
+  top: 5px;
   z-index: 2;
   font-size: 1em;
 }
 
 #next {
   position: fixed;
-  left: 78%;
+  left: 90%;
   top: 97%;
   z-index: 2;
   font-size: 1em;
@@ -116,7 +116,7 @@ p {
 
 #previous {
   position: fixed;
-  left: 4%;
+  left: 10%;
   top: 97%;
   z-index: 2;
   font-size: 1em;
