@@ -109,9 +109,9 @@ p {
 #next {
   position: fixed;
   left: 90%;
-  top: 95%;
+  top: 92%;
   z-index: 2;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
