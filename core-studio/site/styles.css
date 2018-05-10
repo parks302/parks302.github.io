@@ -108,19 +108,19 @@ p {
 
 #next {
   position: fixed;
-  left: 90%;
+  left: 86%;
   top: 90%;
   z-index: 2;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
 }
 
 #previous {
   position: fixed;
-  left: 10%;
+  left: 6%;
   top: 90%;
   z-index: 2;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
 }
 
