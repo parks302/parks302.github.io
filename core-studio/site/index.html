@@ -160,6 +160,34 @@
       }
 
 
+      $(function() {
+    $("div.box").each(function(){
+        var h = $(this).position().top;
+        $(this).css('top',h+'px');
+    });
+      $("div.box").click(function(){
+          if($(this).siblings('div.box').is(':visible')){
+          $('div.box').css('position','absolute');
+        $(this)
+            .siblings('div.box')
+            .fadeOut()
+            .end()
+            .animate({top: $('div.box').eq(0).position().top+'px'},1000);
+      }
+          else{
+              $('div.box').css('position','static');
+              $(this)
+                  .siblings('div.box')
+                  .fadeIn();
+              $("div.box").each(function(){
+        var h = $(this).position().top;
+        $(this).css('top',h+'px');
+    });
+          }
+      });
+  });
+
+
 
 </script>
   </body>
